@@ -16,7 +16,6 @@ def create_app():
     return app
 
 def main():
-    print("Hello World")
     uvicorn.run("app.main:create_app", host="localhost", port=8080, reload=True, workers=2)
 
 if __name__ == "__main__":
