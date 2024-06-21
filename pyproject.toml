@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "jenkins-piper-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Ehab Hussein <ehab.hussein@sap.com>"]
+readme = "README.md"
+packages = [
+    { include = "app" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "app:main"
